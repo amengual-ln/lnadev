@@ -6,8 +6,6 @@
 	import Education from "../components/Education.svelte";
 </script>
 
-<Header />
-
 <Hero />
 
 <Experience />

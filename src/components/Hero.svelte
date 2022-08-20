@@ -13,7 +13,7 @@
     <a href="https://www.linkedin.com/in/lautaroamengual" target="_blank">
         <img src="/linkedin.svg" alt="Linked In" />
     </a>
-    <a href="#experience" class="absolute p-4 m-2 bottom-0 text-center">
+    <a href="#experience" class="absolute p-4 m-2 bottom-0 text-center animate-bounce">
         <img src="/chevron-double-down.svg" alt="Ver más" />
     </a>
 </section>
