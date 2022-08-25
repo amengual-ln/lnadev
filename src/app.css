@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: sans-serif;
   background: #FAFAFA;
