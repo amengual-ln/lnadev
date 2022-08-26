@@ -5,7 +5,9 @@
 </script>
 
 <Header />
-<div class="w-full max-w-screen-lg m-auto p-4">
-	<slot />
-	<Technologies />
+<div class="dark:bg-neutral-900 dark:text-gray-200">
+	<div class="w-full max-w-screen-lg m-auto p-4">
+		<slot />
+		<Technologies />
+	</div>
 </div>
