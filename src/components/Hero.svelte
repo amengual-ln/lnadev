@@ -1,6 +1,6 @@
 <section
 	id="home"
-	class="relative flex flex-col gap-4 justify-center items-center min-h-screen text-center"
+	class="relative flex flex-col gap-4 justify-center items-center min-h-screen text-center z-40"
 >
 	<h1 class="text-5xl font-bold">Hello! I'm Lautaro Amengual</h1>
 	<h2 class="text-3xl">Frontend Engineer</h2>
