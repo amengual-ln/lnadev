@@ -11,9 +11,9 @@
 		</a>
 	</span>
 	<a href="https://www.linkedin.com/in/lautaroamengual" target="_blank">
-		<img src="/linkedin.svg" alt="Linked In" />
+		<img src="/linkedin.svg" alt="Linked In" class="rounded-md transition ring-gray-400 hover:ring dark:invert dark:opacity-80" />
 	</a>
-	<a href="#experience" class="absolute p-4 m-2 bottom-0 text-center animate-bounce">
+	<a href="#experience" class="absolute p-4 m-2 bottom-0 text-center animate-bounce dark:invert dark:opacity-80">
 		<img src="/chevron-double-down.svg" alt="Ver más" />
 	</a>
 </section>
