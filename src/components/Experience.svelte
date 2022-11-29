@@ -13,7 +13,7 @@
 
 	<div class="relative w-full group">
 		<div class="absolute inset-0 bg-black rounded-lg blur opacity-75" />
-		<article class="relative w-full bg-black text-white p-8 rounded-lg shadow-xl dark:shadow-none">
+		<article class="relative w-full bg-black text-white p-8 rounded-lg">
 			<h3 class="text-2xl mb-2">
 				<a href="https://www.coderhouse.com" target="_blank">
 					<Coderhouse />
@@ -63,7 +63,7 @@
 	<div class="relative w-full group">
 		<div class="absolute inset-0.5 bg-red-9net rounded-lg blur opacity-75" />
 		<article
-			class="relative w-full bg-red-9net text-white p-8 rounded-lg shadow-xl shadow-red-300 dark:shadow-none"
+			class="relative w-full bg-red-9net text-white p-8 rounded-lg shadow-xl shadow-red-200 dark:shadow-none"
 		>
 			<h3 class="text-2xl mb-2">
 				<a href="https://www.9net.com.ar" target="_blank">
