@@ -29,7 +29,7 @@
 				<div class="flex gap-2 h-12">
 					<Icon type="js" fill="#fff" size={6} />
 				</div>
-				<Button>Read more</Button>
+				<!-- <Button>Read more</Button> -->
 			</div>
 		</article>
 	</div>
@@ -39,8 +39,8 @@
 		<article
 			class="relative w-full bg-indigo-upya text-white p-8 rounded-lg shadow-xl shadow-purple-200 dark:shadow-none"
 		>
-			<h3 class="text-2xl mb-2">
-				<a href="https://www.coderhouse.com" target="_blank"> UPYA </a>
+			<h3 class="text-3xl mb-2">
+				<a href="https://www.coderhouse.com" target="_blank" class="font-medium"> UPYA </a>
 			</h3>
 			<span>
 				<b>Co-Founder, Frontend Engineer</b>
@@ -55,7 +55,7 @@
 					<Icon type="nest" fill="#fff" size={6} />
 					<Icon type="ts" fill="#fff" size={6} />
 				</div>
-				<Button>Read more</Button>
+				<!-- <Button>Read more</Button> -->
 			</div>
 		</article>
 	</div>
@@ -84,7 +84,7 @@
 					<Icon type="js" fill="#fff" size={6} />
 					<Icon type="php" fill="#fff" size={6} />
 				</div>
-				<Button>Read more</Button>
+				<!-- <Button>Read more</Button> -->
 			</div>
 		</article>
 	</div>
