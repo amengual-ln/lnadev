@@ -6,10 +6,13 @@ module.exports = {
     extend: {
       colors: {
         red: {
-          '9net': '#D83D52',
+          '9net': '#D83D52'
         },
         indigo: {
           'upya': '#7254E5'
+        },
+        blue: {
+          'talenthackers': '#0A425B'
         }
       },
       keyframes: {
@@ -36,5 +39,9 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    { pattern: /(bg|text)-(red|blue)-(100|200|300|400|500|600|700|800|900|9net|upya|talenthackers)/ },
+    { pattern: /(bg|text)-black/ }
+  ],
   plugins: [],
 }
