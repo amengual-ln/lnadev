@@ -40,7 +40,7 @@ module.exports = {
     },
   },
   safelist: [
-    { pattern: /(bg|text)-(red|blue)-(100|200|300|400|500|600|700|800|900|9net|upya|talenthackers)/ },
+    { pattern: /(bg|text)-(red|blue|indigo)-(100|200|300|400|500|600|700|800|900|9net|upya|talenthackers)/ },
     { pattern: /(bg|text)-black/ }
   ],
   plugins: [],

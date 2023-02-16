@@ -20,6 +20,16 @@ export const JOBS = [
         skills: ['js'],
     },
     {
+        company: 'Upya',
+        color: 'indigo-upya',
+        imgUrl: '/upya.svg',
+        position: 'Co-Founder, Front-end Engineer',
+
+        from: 'Nov 2020',
+        to: 'Present',
+        skills: ['react', 'next', 'nest', 'ts'],
+    },
+    {
         company: '9net',
         color: 'red-9net',
         url: 'https://www.9net.com.ar',
@@ -30,29 +40,3 @@ export const JOBS = [
         skills: ['vue', 'js', 'php'],
     }
 ]
-
-{/* <div class="relative w-full group">
-		<div class="absolute inset-0 bg-indigo-upya rounded-lg blur opacity-75" />
-		<article
-			class="relative w-full bg-indigo-upya text-white p-8 rounded-lg shadow-xl shadow-purple-200 dark:shadow-none"
-		>
-			<h3 class="text-3xl mb-2">
-				<a href="https://www.coderhouse.com" target="_blank" class="font-medium"> UPYA </a>
-			</h3>
-			<span>
-				<b>Co-Founder, Frontend Engineer</b>
-				| Oct 2020 - Present
-			</span>
-			<p class="my-4">Designing and developing a platform for education management</p>
-
-			<div class="flex justify-between mt-6">
-				<div class="flex gap-2 h-12">
-					<Icon type="react" fill="#fff" size={6} />
-					<Icon type="next" fill="#fff" size={6} />
-					<Icon type="nest" fill="#fff" size={6} />
-					<Icon type="ts" fill="#fff" size={6} />
-				</div>
-				<!-- <Button>Read more</Button> -->
-			</div>
-		</article>
-	</div> */}
