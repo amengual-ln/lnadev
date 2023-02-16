@@ -8,7 +8,6 @@
 	});
 
 	const toggleDarkMode = () => {
-		console.log('Toggling dark mode');
 		if (theme === 'light') {
 			theme = 'dark';
 			document.querySelector('html')?.classList.add('dark');
