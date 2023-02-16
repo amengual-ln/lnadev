@@ -1,6 +1,13 @@
-<script>
+<script lang="ts">
 	import JobCard from './JobCard.svelte';
 	import { JOBS } from '../jobs';
+	import { onMount } from 'svelte';
+
+	let theme: string;
+
+	onMount(() => {
+		theme = localStorage.getItem('theme') ?? 'light';
+	});
 </script>
 
 <section
@@ -17,7 +24,7 @@
 				<article class="flex gap-8 items-center">
 					<div class="flex-1"><JobCard {job} /></div>
 					<div class="flex-0 opacity-50 {i === JOBS.length - 1 ? '' : 'timeline'}">
-						<img src="/dot.svg" alt="⏺" class="timeline-img" />
+						<img src="/dot.svg" alt="⏺" class="timeline-img brightness-0 dark:brightness-200" />
 					</div>
 					<div class="flex-1" />
 				</article>
@@ -25,7 +32,7 @@
 				<article class="flex gap-8 items-center">
 					<div class="flex-1" />
 					<div class="flex-0 opacity-50 {i === JOBS.length - 1 ? '' : 'timeline'}">
-						<img src="/dot.svg" alt="⏺" class="timeline-img" />
+						<img src="/dot.svg" alt="⏺" class="timeline-img brightness-0 dark:brightness-200" />
 					</div>
 					<div class="flex-1"><JobCard {job} /></div>
 				</article>
