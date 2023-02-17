@@ -17,7 +17,7 @@
 	export let job: Job;
 </script>
 
-<div class="relative group">
+<div class="relative group w-full">
 	<!-- la prop innerClass funciona, y esta en la docu. Pero en el tipo no? -->
 	<Atropos rotateXMax={3} rotateYMax={3} shadow={false} shadowScale={0.8} innerClass="rounded-lg">
 		<div class="absolute inset-0.5 bg-{job.color} rounded-lg blur opacity-75" />
