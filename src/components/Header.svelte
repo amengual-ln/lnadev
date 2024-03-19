@@ -1,5 +1,5 @@
 <script>
-	import DarkModeToggle from './DarkModeToggle.svelte';
+	import DarkModeToggle from "./DarkModeToggle.svelte";
 </script>
 
 <header

@@ -1,4 +1,5 @@
 <script>
+    import '../app.css'
 	import Hero from '../components/Hero.svelte';
 	import Experience from '../components/Experience.svelte';
 

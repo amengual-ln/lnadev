@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Icon from './Icon.svelte';
-	import Atropos from 'atropos/svelte';
-	import 'atropos/css';
 
 	interface Job {
 		company: string;
@@ -19,7 +17,7 @@
 
 <div class="relative group w-full">
 	<!-- la prop innerClass funciona, y esta en la docu. Pero en el tipo no? -->
-	<Atropos rotateXMax={3} rotateYMax={3} shadow={false} shadowScale={0.8} innerClass="rounded-lg">
+	<div>
 		<div class="absolute inset-0.5 bg-{job.color} rounded-lg blur opacity-75" />
 		<article class="relative w-full bg-{job.color} text-white p-8 rounded-lg dark:shadow-none">
 			<h3 class="text-2xl mb-4">
@@ -44,5 +42,5 @@
 				<!-- <Button>Read more</Button> -->
 			</div>
 		</article>
-	</Atropos>
+	</div>
 </div>

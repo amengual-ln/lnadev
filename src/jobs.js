@@ -20,16 +20,6 @@ export const JOBS = [
         skills: ['js'],
     },
     {
-        company: 'Upya',
-        color: 'indigo-upya',
-        imgUrl: '/upya.svg',
-        position: 'Co-Founder, Front-end Engineer',
-
-        from: 'Nov 2020',
-        to: 'Present',
-        skills: ['react', 'next', 'nest', 'ts'],
-    },
-    {
         company: '9net',
         color: 'red-9net',
         url: 'https://www.9net.com.ar',
