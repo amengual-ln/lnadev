@@ -1,4 +1,7 @@
-<section id="home" class="flex flex-col justify-center min-h-screen text-center z-40">
+<section
+	id="home"
+	class="flex flex-col justify-center min-h-screen text-center z-40"
+>
 	<article class="flex flex-col gap-4 justify-center items-center">
 		<h1 class="text-5xl font-medium">Hello! I'm Lautaro Amengual</h1>
 		<h2 class="text-3xl">Frontend Engineer</h2>
@@ -6,6 +9,10 @@
 			Frontend Engineer @
 			<a href="https://www.talenthackers.net" target="_blank">
 				<b>TalentHackers</b>
+			</a>
+			&
+			<a href="https://www.loudintelligence.com" target="_blank">
+				<b>Loud Intelligence</b>
 			</a>
 			| JS Mentor @
 			<a href="https://www.coderhouse.com" target="_blank">
