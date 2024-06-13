@@ -1,5 +1,5 @@
 <footer
-    class="w-full justify-center items-center p-8 text-sm flex flex-col gap-4 text-gray-800/50 dark:bg-neutral-900 dark:text-gray-200/50"
+    class="w-full justify-center items-center p-8 text-sm flex flex-col gap-4 text-gray-800/70 dark:bg-neutral-900 dark:text-gray-200/70"
 >
     <div class="flex gap-3">
         <a href="https://www.linkedin.com/in/lautaroamengual" target="_blank">

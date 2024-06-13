@@ -19,7 +19,7 @@
 	};
 </script>
 
-<button on:click={toggleDarkMode}>
+<button on:click={toggleDarkMode} aria-label="Toggle dark mode">
 	<svg fill="black" viewBox="0 0 16 16" class="w-6 cursor-pointer">
 		{#if theme === "dark"}
 			<path
