@@ -16,6 +16,13 @@
                 class="rounded-md transition ring-gray-400 hover:ring dark:invert opacity-40 dark:opacity-80"
             />
         </a>
+        <a href="/cv-lna-2024c.pdf" target="_blank">
+            <img
+                src="/cv.svg"
+                alt="CV"
+                class="rounded-md transition ring-gray-400 hover:ring dark:invert dark:opacity-80"
+            />
+        </a>
     </div>
     <pre>Powered by Svelte and my {`<3`} for web dev</pre>
 </footer>

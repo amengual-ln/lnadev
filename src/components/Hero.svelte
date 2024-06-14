@@ -19,7 +19,7 @@
 				<b>Coderhouse</b>
 			</a>
 		</span>
-		<div class="flex gap-3">
+		<div class="flex gap-3 scale-110 mt-2">
 			<a href="https://www.linkedin.com/in/lautaroamengual" target="_blank">
 				<img
 					src="/linkedin.svg"
@@ -31,6 +31,13 @@
 				<img
 					src="/mail.svg"
 					alt="Linked In"
+					class="rounded-md transition ring-gray-400 hover:ring dark:invert dark:opacity-80"
+				/>
+			</a>
+			<a href="/cv-lna-2024c.pdf" target="_blank">
+				<img
+					src="/cv.svg"
+					alt="CV"
 					class="rounded-md transition ring-gray-400 hover:ring dark:invert dark:opacity-80"
 				/>
 			</a>
