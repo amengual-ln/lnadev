@@ -40,7 +40,7 @@
 	});
 </script>
 
-<div class="absolute top-0 left-0 w-screen">
+<div class="absolute top-0 left-0 w-screen pointer-events-none">
 	<div id="icons">
 		<!-- react -->
 		<svg class="w-16 opacity-0 blur-lg absolute" viewBox="0 0 24 24">
