@@ -6,7 +6,7 @@
 	id="home"
 	class="flex flex-col justify-center min-h-screen text-center z-40"
 >
-	<Animate type="fade" config={{ duration: 1500 }}>
+	<Animate type="blur" config={{ duration: 1500 }}>
 		<article class="flex flex-col gap-4 justify-center items-center">
 			<h1 class="text-5xl font-medium">Hello! I'm Lautaro Amengual</h1>
 			<h2 class="text-3xl">Frontend Engineer</h2>

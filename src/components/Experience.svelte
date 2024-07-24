@@ -23,10 +23,12 @@
 	<div class="w-full flex flex-col items-center gap-8 min-h-screen">
 		<!-- TODO: move timeline to its own component -->
 		{#each JOBS as job}
-			<Animate type="fly" config={{ y: 100, duration: 1000 }}>
-				<div class="w-full">
-					<JobCard {job} />
-				</div>
+			<Animate type="fly" config={{ y: 100, duration: 1200 }}>
+				<Animate type="blur" config={{ y: 100, duration: 800 }}>
+					<div class="w-full">
+						<JobCard {job} />
+					</div>
+				</Animate>
 			</Animate>
 		{/each}
 	</div>
