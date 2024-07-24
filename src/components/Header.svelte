@@ -16,8 +16,8 @@
 	</Animate>
 </header>
 
-<Animate type="blur" config={{ duration: 1800 }}>
-	<div class="absolute right-2 p-8 z-50">
+<div class="absolute right-0 p-8 z-50">
+	<Animate type="blur" config={{ duration: 1800 }}>
 		<DarkModeToggle />
-	</div>
-</Animate>
+	</Animate>
+</div>
