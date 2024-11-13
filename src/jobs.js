@@ -20,7 +20,7 @@ export const JOBS = [
         imgUrl: '/jobs/talenthackers.webp',
         position: 'Front-end Engineer',
         from: 'Feb 2023',
-        to: 'Present',
+        to: 'Jul 2024',
         description: 'I developed and updated solutions for the IT talent acquisition area. Implemented best practices and refactors to enhance code quality and user experience.',
         skills: ['vue', 'nuxt', 'js'],
     },

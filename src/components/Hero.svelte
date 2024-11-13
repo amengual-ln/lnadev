@@ -12,10 +12,6 @@
 			<h2 class="text-3xl">Frontend Engineer</h2>
 			<span>
 				Frontend Engineer @
-				<a href="https://www.talenthackers.net" target="_blank">
-					<b>TalentHackers</b>
-				</a>
-				&
 				<a href="https://www.loudintelligence.com" target="_blank">
 					<b>Loud Intelligence</b>
 				</a>

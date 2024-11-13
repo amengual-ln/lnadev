@@ -20,7 +20,7 @@
             <img
                 src="/cv.svg"
                 alt="CV"
-                class="rounded-md transition ring-gray-400 hover:ring dark:invert dark:opacity-80"
+                class="rounded-md transition ring-gray-400 hover:ring dark:invert opacity-40 dark:opacity-80"
             />
         </a>
     </div>
