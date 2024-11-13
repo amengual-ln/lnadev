@@ -60,11 +60,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="hidden lg:flex rounded-r-2xl items-center overflow-hidden">
+			<div class="flex order-first lg:order-none rounded-t-2xl lg:rounded-r-2xl lg:rounded-l-none items-center overflow-hidden">
 				<img
+					loading="lazy"
 					src={job.imgUrl}
 					alt="Imagen de la empresa o producto"
-					class="rounded-r-2xl w-auto object-cover h-full"
+					class="rounded-t-2xl lg:rounded-l-none lg:rounded-r-2xl w-auto object-cover aspect-video lg:aspect-none h-full"
 				/>
 			</div>
 		</article>
