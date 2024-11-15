@@ -8,6 +8,7 @@
 		logoUrl: string | undefined;
 		logoDarkUrl?: string | undefined;
 		imgUrl: string | undefined;
+		wideImgUrl?: string | undefined;
 		position: string;
 		from: string;
 		to: string;
@@ -63,9 +64,15 @@
 			<div class="flex order-first lg:order-none rounded-t-2xl lg:rounded-r-2xl lg:rounded-l-none items-center overflow-hidden">
 				<img
 					loading="lazy"
+					src={job.wideImgUrl || job.imgUrl}
+					alt="Imagen de la empresa o producto"
+					class="block lg:hidden rounded-t-2xl lg:rounded-l-none lg:rounded-r-2xl w-auto object-cover aspect-video lg:aspect-none h-full"
+				/>
+				<img
+					loading="lazy"
 					src={job.imgUrl}
 					alt="Imagen de la empresa o producto"
-					class="rounded-t-2xl lg:rounded-l-none lg:rounded-r-2xl w-auto object-cover aspect-video lg:aspect-none h-full"
+					class="hidden lg:block rounded-t-2xl lg:rounded-l-none lg:rounded-r-2xl w-auto object-cover aspect-video lg:aspect-none h-full"
 				/>
 			</div>
 		</article>
