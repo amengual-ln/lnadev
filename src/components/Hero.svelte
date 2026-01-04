@@ -12,8 +12,8 @@
 			<h2 class="text-3xl">Frontend Engineer</h2>
 			<span>
 				Frontend Engineer @
-				<a href="https://www.loudintelligence.com" target="_blank">
-					<b>Loud Intelligence</b>
+				<a href="https://www.mercadolibre.com" target="_blank">
+					<b>Mercado Libre</b>
 				</a>
 				| JS Mentor @
 				<a href="https://www.coderhouse.com" target="_blank">
