@@ -1,28 +1,12 @@
-<footer
-    class="w-full justify-center items-center p-8 text-sm flex flex-col gap-4 text-gray-800/70 dark:bg-neutral-900 dark:text-gray-200/70"
->
-    <div class="flex gap-3">
-        <a href="https://www.linkedin.com/in/lautaroamengual" target="_blank">
-            <img
-                src="/linkedin.svg"
-                alt="Linked In"
-                class="rounded-md transition ring-gray-400 hover:ring dark:invert opacity-40 dark:opacity-80"
-            />
-        </a>
-        <a href="mailto:amengual.ln@gmail.com" target="_blank">
-            <img
-                src="/mail.svg"
-                alt="Linked In"
-                class="rounded-md transition ring-gray-400 hover:ring dark:invert opacity-40 dark:opacity-80"
-            />
-        </a>
-        <a href="/cv-lna-2024c.pdf" target="_blank">
-            <img
-                src="/cv.svg"
-                alt="CV"
-                class="rounded-md transition ring-gray-400 hover:ring dark:invert opacity-40 dark:opacity-80"
-            />
-        </a>
-    </div>
-    <pre>Powered by Svelte and my {`<3`} for web dev</pre>
+<footer class="footer shell">
+  <p>© {new Date().getFullYear()} Lautaro Amengual</p>
+  <div><a href="mailto:amengual.ln@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/lautaroamengual" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
 </footer>
+
+<style>
+  .footer { min-height: 7rem; display: flex; align-items: center; justify-content: space-between; gap: var(--space-lg); border-top: var(--rule-thin); color: var(--color-muted); font: var(--text-xs)/1.5 var(--font-mono); text-transform: uppercase; }
+  .footer div { display: flex; gap: var(--space-lg); }
+  .footer a { min-height: 2.75rem; display: inline-flex; align-items: center; text-decoration: none; white-space: nowrap; }
+  @media (hover: hover) and (pointer: fine) { .footer a:hover { color: var(--color-accent); } }
+  @media (max-width: 42rem) { .footer { align-items: flex-start; flex-direction: column; padding-block: var(--space-xl); } }
+</style>

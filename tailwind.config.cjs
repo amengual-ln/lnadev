@@ -24,7 +24,7 @@ module.exports = {
             opacity: 0.4,
             filter: 'blur(0)'
           },
-          '70': {
+          '70%': {
             filter: 'blur(0)'
           },
           '100%': {
