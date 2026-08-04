@@ -7,24 +7,63 @@
 
   onMount(() => {
     const items = Array.from(section.querySelectorAll<HTMLElement>('.reveal'));
+    const rows = Array.from(section.querySelectorAll<HTMLElement>('.experience-row'));
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let revealObserver: IntersectionObserver | undefined;
 
     if (reducedMotion || !('IntersectionObserver' in window)) {
       items.forEach((item) => item.classList.add('is-in'));
-      return;
+    } else {
+      section.classList.add('reveal-ready');
+      revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-in');
+          revealObserver?.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+      items.forEach((item) => revealObserver?.observe(item));
     }
 
-    section.classList.add('reveal-ready');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-in');
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    const mobileQuery = window.matchMedia('(max-width: 54rem) and (hover: none) and (pointer: coarse)');
+    let frame = 0;
+    const updateCenteredRow = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        rows.forEach((row) => row.classList.remove('is-centered'));
+        if (!mobileQuery.matches) return;
 
-    items.forEach((item) => observer.observe(item));
-    return () => observer.disconnect();
+        const viewportCenter = window.innerHeight / 2;
+        const visibleRows = rows.filter((row) => {
+          const { top, bottom } = row.getBoundingClientRect();
+          return bottom > 0 && top < window.innerHeight;
+        });
+        const centeredRow = visibleRows.reduce<HTMLElement | null>((closest, row) => {
+          if (!closest) return row;
+          const rowDistance = Math.abs(row.getBoundingClientRect().top + row.offsetHeight / 2 - viewportCenter);
+          const closestDistance = Math.abs(closest.getBoundingClientRect().top + closest.offsetHeight / 2 - viewportCenter);
+          return rowDistance < closestDistance ? row : closest;
+        }, null);
+
+        centeredRow?.classList.add('is-centered');
+      });
+    };
+    const onMediaChange = () => updateCenteredRow();
+
+    window.addEventListener('scroll', updateCenteredRow, { passive: true });
+    window.addEventListener('resize', updateCenteredRow);
+    mobileQuery.addEventListener('change', onMediaChange);
+    updateCenteredRow();
+
+    return () => {
+      revealObserver?.disconnect();
+      window.removeEventListener('scroll', updateCenteredRow);
+      window.removeEventListener('resize', updateCenteredRow);
+      mobileQuery.removeEventListener('change', onMediaChange);
+      if (frame) cancelAnimationFrame(frame);
+    };
   });
 </script>
 
@@ -92,6 +131,12 @@
     .experience-row:hover .role h3 a { color: var(--company-color); }
     .experience-row:hover .role h3 span { transform: translate(0.16rem, -0.12rem); }
     .experience-row:hover .visual img { opacity: 1; filter: grayscale(0) contrast(1.02); mix-blend-mode: normal; }
+  }
+  @media (max-width: 54rem) and (hover: none) and (pointer: coarse) {
+    .experience-row.is-centered { background: var(--color-paper-2); }
+    .experience-row.is-centered .role h3 a { color: var(--company-color); }
+    .experience-row.is-centered .role h3 span { transform: translate(0.16rem, -0.12rem); }
+    .experience-row.is-centered .visual img { opacity: 1; filter: grayscale(0) contrast(1.02); mix-blend-mode: normal; }
   }
   .experience-row:focus-within { background: var(--color-paper-2); }
   .experience-row:focus-within .role h3 a { color: var(--company-color); }
