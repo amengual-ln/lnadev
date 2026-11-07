@@ -28,26 +28,31 @@
 
     const mobileQuery = window.matchMedia('(max-width: 54rem) and (hover: none) and (pointer: coarse)');
     let frame = 0;
+    let centeredRow: HTMLElement | null = null;
     const updateCenteredRow = () => {
+      if (!mobileQuery.matches && !centeredRow) return;
       if (frame) return;
       frame = requestAnimationFrame(() => {
         frame = 0;
-        rows.forEach((row) => row.classList.remove('is-centered'));
-        if (!mobileQuery.matches) return;
-
+        let nextRow: HTMLElement | null = null;
+        let closestDistance = Infinity;
         const viewportCenter = window.innerHeight / 2;
-        const visibleRows = rows.filter((row) => {
-          const { top, bottom } = row.getBoundingClientRect();
-          return bottom > 0 && top < window.innerHeight;
-        });
-        const centeredRow = visibleRows.reduce<HTMLElement | null>((closest, row) => {
-          if (!closest) return row;
-          const rowDistance = Math.abs(row.getBoundingClientRect().top + row.offsetHeight / 2 - viewportCenter);
-          const closestDistance = Math.abs(closest.getBoundingClientRect().top + closest.offsetHeight / 2 - viewportCenter);
-          return rowDistance < closestDistance ? row : closest;
-        }, null);
+        if (mobileQuery.matches) {
+          for (const row of rows) {
+            const { top, bottom } = row.getBoundingClientRect();
+            if (bottom <= 0 || top >= window.innerHeight) continue;
+            const distance = Math.abs((top + bottom) / 2 - viewportCenter);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              nextRow = row;
+            }
+          }
+        }
 
-        centeredRow?.classList.add('is-centered');
+        if (nextRow === centeredRow) return;
+        centeredRow?.classList.remove('is-centered');
+        nextRow?.classList.add('is-centered');
+        centeredRow = nextRow;
       });
     };
     const onMediaChange = () => updateCenteredRow();
@@ -99,7 +104,7 @@
   .experience { padding-block: var(--space-3xl); border-top: var(--rule-thin); }
   .section-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.65fr); gap: var(--space-xl); align-items: end; padding-bottom: var(--space-2xl); }
   .section-head h2 { font-size: var(--text-section); line-height: 1; }
-  .section-head p { max-width: 28rem; color: var(--color-muted); line-height: 1.55; }
+  .section-head p { max-width: 28rem; color: var(--color-muted); line-height: 1.55; text-wrap: pretty; }
   .experience-list { border-top: var(--rule-thin); }
   :global(.reveal-ready) .reveal { opacity: 0; transform: translateY(0.75rem); }
   :global(.reveal-ready) .reveal:global(.is-in) { opacity: 1; transform: translateY(0); transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out); transition-delay: var(--reveal-delay, 0ms); }
@@ -114,7 +119,7 @@
   .role h3 a { display: inline-flex; align-items: baseline; gap: var(--space-sm); text-decoration: none; }
   .role h3 span { color: var(--color-accent); font: var(--text-sm) var(--font-mono); transition: transform var(--dur-base) var(--ease-out); }
   .position { margin-top: var(--space-sm); color: var(--color-ink); font-size: var(--text-sm); font-weight: 500; }
-  .description { max-width: 39rem; margin-top: var(--space-md); color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6; }
+  .description { max-width: 60ch; margin-top: var(--space-md); color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6; text-wrap: pretty; }
   ul { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin: var(--space-lg) 0 0; padding: 0; list-style: none; }
   li { color: var(--color-muted); font: var(--text-xs) var(--font-mono); text-transform: uppercase; }
   li + li::before { content: '/'; margin-inline-end: var(--space-xs); color: var(--color-rule-strong); }

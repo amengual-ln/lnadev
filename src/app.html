@@ -3,12 +3,22 @@
 
 <head>
 	<meta charset="utf-8" />
+	<script>
+		(() => {
+			let savedTheme;
+			try { savedTheme = localStorage.getItem('theme'); } catch {}
+			document.documentElement.classList.toggle(
+				'dark',
+				savedTheme === 'dark' || (savedTheme == null && matchMedia('(prefers-color-scheme: dark)').matches)
+			);
+		})();
+	</script>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Lautaro's personal portfolio (:">
-	<title>Lna Dev</title>
+	<meta name="description" content="Lautaro Amengual is a software engineer and product builder. Explore his frontend engineering experience, products, and systems.">
+	<title>Lautaro Amengual · Software Engineer</title>
 	%sveltekit.head%
 </head>
 
