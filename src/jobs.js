@@ -20,7 +20,7 @@ export const JOBS = [
         position: 'Front-end Engineer',
         from: 'Feb 2024',
         to: 'Dec 2025',
-        description: ' I contribute to the development of the Voi<3 platform, focusing on creating intuitive and engaging user interfaces for generating audio ad campaigns. My role involves collaborating with a cross-functional team to ensure seamless user experiences and bring innovative features to life.',
+        description: 'I contributed to the development of the Voi<3 platform, focusing on intuitive user interfaces for generating audio ad campaigns. I collaborated with a cross-functional team on the user experience and new features.',
         skills: ['react', 'next', 'js'],
     },
     {

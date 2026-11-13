@@ -1,5 +1,9 @@
 # create-svelte
 
+## Portfolio content and CV
+
+Edit `src/jobs.js` to update public employment history. The landing and the on-demand `/cv.pdf` route read the same jobs; the PDF is generated for each request. Run `npm run check:cv` to verify PDF generation locally.
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
 ## Creating a project
