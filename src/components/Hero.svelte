@@ -10,7 +10,7 @@
     </div>
     <dl class="profile-data">
       <div><dt>Now</dt><dd>{JOBS[0].position}<br />{JOBS[0].company}</dd></div>
-      <div><dt>Based</dt><dd>Argentina<br />UTC−3</dd></div>
+      <div><dt>Founder</dt><dd><a href="https://www.sparck.com.ar/" target="_blank" rel="noreferrer">Spärck ↗</a><br />AI learning community</dd></div>
     </dl>
     <nav class="profile-links" aria-label="Profile links">
       <a href="#experience">Experience <span>↓</span></a>
