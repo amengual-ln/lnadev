@@ -20,7 +20,6 @@
   },
   "type": "module",
   "dependencies": {
-    "pdf-lib": "^1.17.1",
-    "svelte-inview": "^4.0.2"
+    "pdf-lib": "^1.17.1"
   }
 }

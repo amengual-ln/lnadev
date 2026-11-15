@@ -42,7 +42,7 @@ A personal portfolio that communicates professional experience, how Lautaro appr
 - The hero portrait was inspired by AI Hero's integrated portrait treatment. Dark mode uses a transparent cutout that meets the bottom divider, sits in front of the extended profile rules and LinkedIn hover area, and has a softly animated backdrop. Respect reduced-motion preferences and keep the backdrop clipped at the divider.
 - Light mode uses the original photo as a rectangular frame: the cutout looked too stark against the light background. On desktop, its bottom aligns with the profile links; the profile details and links have matching placement across themes, and the portrait's scale and position remain consistent when switching. Lautaro approved this balance.
 - On mobile, the portrait follows the profile details and links and precedes Experience. Keep the light-mode photo inset from the section edges; a full-width black background was considered but not adopted. A shorter crop is an option if the photo feels too tall when scrolling, not a requested change.
-- `static/personalportrait.jpeg` is the supplied original; `static/portrait-cutout-v2.png` is the Adobe background-removal cutout used in dark mode. `static/personalportrait-cutout.png` is the previous AI-edited cutout. Preserve the original when revising assets.
+- `static/personalportrait.jpeg` is the supplied original; `static/portrait-cutout-v2.png` is the Adobe background-removal cutout used in dark mode. Preserve the original when revising assets.
 
 ## Pending and Proposed Work
 

@@ -92,7 +92,7 @@
             </ul>
           </div>
           <a class="visual" href={job.url} target="_blank" rel="noreferrer" aria-label="Open {job.company}">
-            <img loading="lazy" width="890" height="500" src={job.wideImgUrl || job.imgUrl} alt="{job.company} product interface" />
+            <img loading="lazy" width="890" height="500" src={job.imgUrl} alt="{job.company} product interface" />
           </a>
         </article>
       {/each}

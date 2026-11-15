@@ -1,9 +1,7 @@
 export const JOBS = [
     {
         company: 'Mercado Libre',
-        color: 'blue-talenthackers',
         url: 'https://mercadolibre.com/',
-        logoUrl: '/jobs/mercadolibre-logo.png',
         imgUrl: '/jobs/mercadolibre.png',
         position: 'Front-end Engineer',
         from: 'Dec 2025',
@@ -13,9 +11,7 @@ export const JOBS = [
     },
     {
         company: 'Loud Intelligence',
-        color: 'blue-talenthackers',
         url: 'https://loudintelligence.com/',
-        logoUrl: '/jobs/loudintelligence-logo.svg',
         imgUrl: '/jobs/loudintelligence.webp',
         position: 'Front-end Engineer',
         from: 'Feb 2024',
@@ -25,10 +21,7 @@ export const JOBS = [
     },
     {
         company: 'TalentHackers',
-        color: 'blue-talenthackers',
         url: 'https://talenthackers.net/',
-        logoUrl: '/jobs/talenthackers-logo.webp',
-        logoDarkUrl: '/jobs/talenthackers-logo-dark.webp',
         imgUrl: '/jobs/talenthackers.webp',
         position: 'Front-end Engineer',
         from: 'Feb 2023',
@@ -38,11 +31,8 @@ export const JOBS = [
     },
     {
         company: 'Coderhouse',
-        color: 'black',
         url: 'https://coderhouse.com/',
-        logoUrl: '/jobs/coderhouse-logo.png',
-        imgUrl: '/jobs/coderhouse.png',
-        wideImgUrl: '/jobs/coderhouse-wide.png',
+        imgUrl: '/jobs/coderhouse-wide.png',
         position: 'JS Mentor',
         from: 'Jun 2022',
         to: 'Jun 2024',
@@ -51,11 +41,8 @@ export const JOBS = [
     },
     {
         company: '9net',
-        color: 'red-9net',
         url: 'https://www.9net.com.ar',
-        logoUrl: '/jobs/9net-logo.svg',
-        imgUrl: '/jobs/9net.png',
-        wideImgUrl: '/jobs/9net-wide.png',
+        imgUrl: '/jobs/9net-wide.png',
         position: 'Fullstack Developer',
         from: 'Oct 2018',
         to: 'Oct 2020',
