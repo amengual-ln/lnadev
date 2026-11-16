@@ -114,14 +114,14 @@
   .experience-row:nth-child(4) { --reveal-delay: calc(var(--dur-fast) * 1.5); }
   .experience-row:nth-child(5) { --reveal-delay: calc(var(--dur-fast) * 2); }
   .experience-row { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr) minmax(0, 19rem); gap: var(--space-xl); margin-inline: calc(var(--space-md) * -1); padding: var(--space-xl) var(--space-md); border-bottom: var(--rule-thin); border-radius: var(--radius-sm); align-items: start; transition: background-color var(--dur-base) var(--ease-out); }
-  .period { display: grid; gap: var(--space-2xs); color: var(--color-muted); font: var(--text-xs)/1.4 var(--font-mono); font-variant-numeric: tabular-nums; text-transform: uppercase; }
+  .period { display: grid; gap: var(--space-2xs); color: var(--color-muted); font: 0.75rem/1.4 var(--font-mono); font-variant-numeric: tabular-nums; text-transform: uppercase; }
   .role h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1; }
   .role h3 a { display: inline-flex; align-items: baseline; gap: var(--space-sm); text-decoration: none; }
   .role h3 span { color: var(--color-accent); font: var(--text-sm) var(--font-mono); transition: transform var(--dur-base) var(--ease-out); }
-  .position { margin-top: var(--space-sm); color: var(--color-ink); font-size: var(--text-sm); font-weight: 500; }
-  .description { max-width: 60ch; margin-top: var(--space-md); color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6; text-wrap: pretty; }
+  .position { margin-top: var(--space-sm); color: var(--color-ink); font-size: var(--text-body); font-weight: 500; }
+  .description { max-width: 60ch; margin-top: var(--space-md); color: var(--color-muted); font-size: var(--text-body); line-height: 1.6; text-wrap: pretty; }
   ul { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin: var(--space-lg) 0 0; padding: 0; list-style: none; }
-  li { color: var(--color-muted); font: var(--text-xs) var(--font-mono); text-transform: uppercase; }
+  li { color: var(--color-muted); font: 0.75rem var(--font-mono); text-transform: uppercase; }
   li + li::before { content: '/'; margin-inline-end: var(--space-xs); color: var(--color-rule-strong); }
   .visual { min-width: 0; aspect-ratio: 16 / 10; overflow: clip; border: var(--rule-thin); border-radius: var(--radius-sm); background: var(--color-accent-soft); }
   .visual img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; opacity: 0.72; filter: grayscale(1) contrast(1.08); mix-blend-mode: multiply; transition: opacity var(--dur-slow) var(--ease-out), filter var(--dur-slow) var(--ease-out); }
